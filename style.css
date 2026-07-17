@@ -1008,7 +1008,32 @@ button:focus-visible {
         padding: 26px;
     }
 }
+/* ---------- Stacked featured projects ---------- */
 
+.project-stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+}
+
+.project-card-wide {
+    width: 100%;
+}
+
+.project-card-wide .project-media {
+    aspect-ratio: 21 / 9;
+}
+
+.project-card-wide .project-card-content > p:not(.project-type) {
+    min-height: auto;
+    max-width: 850px;
+}
+
+@media (max-width: 760px) {
+    .project-card-wide .project-media {
+        aspect-ratio: 16 / 9;
+    }
+}
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
