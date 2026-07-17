@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
@@ -11,7 +12,7 @@
 
     <meta
         name="description"
-        content="Portfolio of Justin J. Abreu, a software developer specializing in C++, C#, real-time graphics, and interactive systems."
+        content="Portfolio of Justin J. Abreu, a software developer focused on C++, C#, real-time graphics, vehicle systems, and interactive software."
     >
 
     <link rel="stylesheet" href="style.css">
@@ -20,7 +21,9 @@
 <body>
     <header class="site-header">
         <nav class="navbar">
-            <a class="logo" href="#home">Justin J. Abreu</a>
+            <a class="logo" href="#home">
+                Justin J. Abreu
+            </a>
 
             <button
                 class="menu-button"
@@ -32,11 +35,25 @@
             </button>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -44,19 +61,36 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <p class="eyebrow">Software Developer</p>
+                <p class="eyebrow">
+                    Software Developer
+                </p>
 
-                <h1>Justin J. Abreu</h1>
+                <h1>
+                    Justin J. Abreu
+                </h1>
 
                 <p class="hero-description">
-                    I build interactive software, real-time graphics systems,
-                    vehicle experiences, and technical projects using C++,
-                    C#, Vulkan, Unity, and modern development tools.
+                    I build interactive software, real-time graphics
+                    systems, vehicle experiences, and playable
+                    prototypes using C++, C#, Vulkan, Unity, and
+                    modern development tools.
                 </p>
 
                 <div class="hero-actions">
-                    <a class="button primary-button" href="#projects">
-                        View My Work
+                    <a
+                        class="button primary-button"
+                        href="#projects"
+                    >
+                        View Featured Work
+                    </a>
+
+                    <a
+                        class="button secondary-button"
+                        href="https://justinabreu8.itch.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Play My Builds
                     </a>
 
                     <a
@@ -67,8 +101,26 @@
                     >
                         GitHub
                     </a>
+
+                    <a
+                        class="button secondary-button"
+                        href="https://www.linkedin.com/in/justin-abreu-2625342a3/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
                 </div>
             </div>
+
+            <a
+                class="scroll-indicator"
+                href="#about"
+                aria-label="Scroll to About section"
+            >
+                <span>Scroll</span>
+                <span class="scroll-line"></span>
+            </a>
         </section>
 
         <section id="about" class="content-section">
@@ -77,13 +129,26 @@
                 <h2>About Me</h2>
             </div>
 
-            <p class="about-text">
-                I am a Game Development bachelor’s student at Full Sail
-                University with a software-engineering and computer-science
-                foundation. My work includes graphics programming, systems
-                development, vehicle mechanics, artificial intelligence,
-                shaders, and interactive applications.
-            </p>
+            <div class="about-layout">
+                <p class="about-text">
+                    I am a Game Development bachelor’s student at
+                    Full Sail University with a foundation in
+                    computer science and software engineering. My
+                    work focuses on graphics programming, systems
+                    development, vehicle mechanics, artificial
+                    intelligence, shaders, and interactive
+                    applications.
+                </p>
+
+                <p class="about-text secondary-about-text">
+                    I build projects from early prototypes through
+                    playable experiences, combining technical
+                    systems with atmosphere and presentation. I use
+                    itch.io to publish playable builds and
+                    development tests as my projects continue to
+                    evolve.
+                </p>
+            </div>
         </section>
 
         <section id="projects" class="content-section">
@@ -92,138 +157,348 @@
                 <h2>Featured Projects</h2>
             </div>
 
+            <p class="section-introduction">
+                A selection of my vehicle, racing, graphics, and
+                interactive software projects.
+            </p>
+
             <div class="project-grid">
-                <article class="project-card">
-                    <div class="project-image-placeholder">
-                        Project image coming soon
+                <article class="project-card featured-card">
+                    <div class="project-media">
+                        <img
+                            class="project-image"
+                            src="open-lot-cover.png"
+                            alt="Multiple vehicles driving through the neon-lit city environment in Open Lot: After Hours"
+                        >
+
+                        <span class="project-status">
+                            In Development
+                        </span>
                     </div>
 
                     <div class="project-card-content">
-                        <p class="project-type">Unity · C# · Vehicle Systems</p>
+                        <p class="project-type">
+                            Unity · C# · Vehicle Systems · AI
+                        </p>
+
                         <h3>Open Lot: After Hours</h3>
 
                         <p>
-                            A nighttime driving experience featuring vehicle
-                            physics, traffic behavior, camera systems, and an
-                            explorable urban environment.
+                            An open-world nighttime driving
+                            experience featuring vehicle physics,
+                            artificial-intelligence traffic, camera
+                            systems, urban exploration, environmental
+                            effects, and cinematic presentation.
                         </p>
 
-                        <a href="#" aria-label="View Open Lot project">
-                            View project
-                        </a>
+                        <div class="project-links">
+                            <a
+                                href="https://justinabreu8.itch.io"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View playable builds
+                            </a>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-image-placeholder">
-                        Project image coming soon
+                    <div class="project-media project-placeholder">
+                        <div class="placeholder-content">
+                            <span class="placeholder-label">
+                                Turbo Night
+                            </span>
+
+                            <span class="placeholder-subtitle">
+                                Project image coming soon
+                            </span>
+                        </div>
+
+                        <span class="project-status">
+                            In Development
+                        </span>
                     </div>
 
                     <div class="project-card-content">
-                        <p class="project-type">C++ · Vulkan · HLSL</p>
-                        <h3>Real-Time Graphics</h3>
-
-                        <p>
-                            Graphics-programming projects involving rendering
-                            pipelines, shaders, transformations, geometry, and
-                            GPU-based drawing.
+                        <p class="project-type">
+                            Unity · C# · Racing Systems
                         </p>
 
-                        <a href="#" aria-label="View graphics project">
-                            View project
-                        </a>
+                        <h3>Turbo Night</h3>
+
+                        <p>
+                            A stylized nighttime racing project
+                            focused on responsive driving, cinematic
+                            cameras, vehicle handling, atmospheric
+                            lighting, and high-speed presentation.
+                        </p>
+
+                        <div class="project-links">
+                            <a
+                                href="https://justinabreu8.itch.io"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View development builds
+                            </a>
+                        </div>
                     </div>
                 </article>
 
                 <article class="project-card">
-                    <div class="project-image-placeholder">
-                        Project image coming soon
+                    <div class="project-media project-placeholder">
+                        <div class="placeholder-content">
+                            <span class="placeholder-label">
+                                Torque Legends
+                            </span>
+
+                            <span class="placeholder-subtitle">
+                                Project image coming soon
+                            </span>
+                        </div>
+
+                        <span class="project-status">
+                            In Development
+                        </span>
                     </div>
 
                     <div class="project-card-content">
-                        <p class="project-type">Team Project · Unity · C#</p>
-                        <h3>Project Portfolio Campus</h3>
-
-                        <p>
-                            A collaborative software project demonstrating
-                            team development, version control, programming,
-                            integration, and iterative design.
+                        <p class="project-type">
+                            Unity · C# · Vehicle AI · Gameplay
                         </p>
 
-                        <a
-                            href="https://github.com/VelaK-99/Project-Portfolio-Campus"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            View repository
-                        </a>
+                        <h3>Torque Legends</h3>
+
+                        <p>
+                            A racing project exploring vehicle
+                            behavior, artificial-intelligence
+                            opponents, gameplay systems, track
+                            interaction, and iterative driving
+                            mechanics.
+                        </p>
+
+                        <div class="project-links">
+                            <a
+                                href="https://justinabreu8.itch.io"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View project builds
+                            </a>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="skills" class="content-section">
+        <section
+            id="engineering"
+            class="content-section engineering-section"
+        >
             <div class="section-heading">
                 <p class="section-number">03</p>
+                <h2>Engineering Work</h2>
+            </div>
+
+            <div class="engineering-grid">
+                <article class="engineering-card">
+                    <p class="engineering-number">01</p>
+
+                    <div>
+                        <p class="project-type">
+                            C++ · Vulkan · HLSL
+                        </p>
+
+                        <h3>Real-Time Graphics</h3>
+
+                        <p>
+                            Rendering work involving Vulkan pipeline
+                            creation, shader compilation, GPU drawing,
+                            transformations, geometry processing, and
+                            real-time graphics fundamentals.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="engineering-card">
+                    <p class="engineering-number">02</p>
+
+                    <div>
+                        <p class="project-type">
+                            C++ · Software Rasterization
+                        </p>
+
+                        <h3>Graphics Foundations</h3>
+
+                        <p>
+                            Coursework and experiments involving
+                            rasterization, depth buffering, UV
+                            coordinates, triangle rendering, matrices,
+                            perspective projection, and color
+                            conversion.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="engineering-card">
+                    <p class="engineering-number">03</p>
+
+                    <div>
+                        <p class="project-type">
+                            Git · GitHub · Team Development
+                        </p>
+
+                        <h3>Collaborative Development</h3>
+
+                        <p>
+                            Experience using version control, branches,
+                            commits, pull requests, collaborative
+                            repositories, debugging, integration, and
+                            iterative development workflows.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <a
+                class="inline-button"
+                href="https://github.com/JustinAbreu11"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Explore my GitHub
+            </a>
+        </section>
+
+        <section id="skills" class="content-section">
+            <div class="section-heading">
+                <p class="section-number">04</p>
                 <h2>Technical Skills</h2>
             </div>
 
             <div class="skills-grid">
                 <article class="skill-group">
-                    <h3>Languages</h3>
-                    <p>C++, C#, SQL, HLSL, HTML, CSS, JavaScript</p>
+                    <p class="skill-label">Languages</p>
+
+                    <h3>Programming</h3>
+
+                    <div class="skill-tags">
+                        <span>C++</span>
+                        <span>C#</span>
+                        <span>SQL</span>
+                        <span>HLSL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
                 </article>
 
                 <article class="skill-group">
-                    <h3>Graphics and Engines</h3>
-                    <p>Vulkan, Unity, Unreal Engine, URP, shader programming</p>
+                    <p class="skill-label">Graphics</p>
+
+                    <h3>Engines and Rendering</h3>
+
+                    <div class="skill-tags">
+                        <span>Unity</span>
+                        <span>Unreal Engine</span>
+                        <span>Vulkan</span>
+                        <span>URP</span>
+                        <span>Shader Programming</span>
+                        <span>Real-Time Rendering</span>
+                    </div>
                 </article>
 
                 <article class="skill-group">
+                    <p class="skill-label">Workflow</p>
+
                     <h3>Tools</h3>
-                    <p>Visual Studio, Git, GitHub, GitHub Desktop, CMake</p>
+
+                    <div class="skill-tags">
+                        <span>Visual Studio</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>GitHub Desktop</span>
+                        <span>CMake</span>
+                    </div>
                 </article>
 
                 <article class="skill-group">
+                    <p class="skill-label">Foundations</p>
+
                     <h3>Core Knowledge</h3>
-                    <p>
-                        Data structures, object-oriented programming,
-                        systems programming, software engineering, and
-                        relational databases
-                    </p>
+
+                    <div class="skill-tags">
+                        <span>Data Structures</span>
+                        <span>Object-Oriented Programming</span>
+                        <span>Systems Programming</span>
+                        <span>Software Engineering</span>
+                        <span>Relational Databases</span>
+                    </div>
                 </article>
             </div>
         </section>
 
         <section id="contact" class="content-section contact-section">
-            <div class="section-heading">
-                <p class="section-number">04</p>
-                <h2>Contact</h2>
-            </div>
+            <div class="contact-panel">
+                <div>
+                    <p class="section-number">05</p>
 
-            <p>
-                I am currently building software, graphics, and interactive
-                projects while completing my bachelor’s degree.
-            </p>
+                    <h2>Let’s Connect</h2>
 
-            <div class="contact-links">
-                <a
-                    href="https://github.com/JustinAbreu11"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
+                    <p>
+                        I am currently developing software, graphics,
+                        vehicle systems, and interactive experiences
+                        while completing my bachelor’s degree. New
+                        prototypes and build tests will continue to be
+                        published on itch.io.
+                    </p>
+                </div>
 
-                <a href="mailto:YOUR_EMAIL_HERE">
-                    Email
-                </a>
+                <div class="contact-links">
+                    <a
+                        href="mailto:jjpar0912@gmail.com"
+                    >
+                        Email Me
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/justin-abreu-2625342a3/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+
+                    <a
+                        href="https://github.com/JustinAbreu11"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://justinabreu8.itch.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Playable Builds
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© <span id="current-year"></span> Justin J. Abreu</p>
+        <p>
+            © <span id="current-year"></span>
+            Justin J. Abreu
+        </p>
+
+        <p>
+            Designed and developed with HTML, CSS, and JavaScript.
+        </p>
     </footer>
 
     <script src="script.js"></script>
