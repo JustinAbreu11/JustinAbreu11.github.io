@@ -1047,3 +1047,15 @@ button:focus-visible {
         animation-iteration-count: 1 !important;
     }
 }
+
+/* ---------- Clickable project cards ---------- */
+
+.clickable-project-card {
+    cursor: pointer;
+}
+
+.clickable-project-card:focus-visible {
+    border-color: var(--gold);
+    outline: 2px solid var(--gold-bright);
+    outline-offset: 5px;
+}
