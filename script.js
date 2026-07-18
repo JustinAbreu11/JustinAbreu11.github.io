@@ -126,3 +126,32 @@ window.addEventListener(
 );
 
 updateActiveNavigationLink();
+
+const clickableProjectCards = document.querySelectorAll(
+    ".clickable-project-card"
+);
+
+clickableProjectCards.forEach((card) => {
+    function openProjectPage() {
+        const projectUrl = card.dataset.projectUrl;
+
+        if (projectUrl) {
+            window.location.href = projectUrl;
+        }
+    }
+
+    card.addEventListener("click", (event) => {
+        if (event.target.closest("a, button")) {
+            return;
+        }
+
+        openProjectPage();
+    });
+
+    card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openProjectPage();
+        }
+    });
+});
